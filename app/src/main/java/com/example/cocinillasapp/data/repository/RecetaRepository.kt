@@ -11,6 +11,8 @@ class RecetaRepository(private val apiService: ApiService, private val favoritaD
 
     suspend fun buscarRecetas(category: String) = apiService.getMealsByCategory(category)
 
+    suspend fun getMealById(id: String) = apiService.getMealById(id)
+
     suspend fun agregarUsuario(usuario: Usuario){
         favoritaDao.insertUsuario(usuario)
     }

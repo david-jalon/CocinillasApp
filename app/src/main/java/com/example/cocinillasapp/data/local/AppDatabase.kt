@@ -8,7 +8,7 @@ import com.example.cocinillasapp.data.model.FavoritasUsuario
 import com.example.cocinillasapp.data.model.Receta
 import com.example.cocinillasapp.data.model.Usuario
 
-@Database(entities = [Receta::class, Usuario::class, FavoritasUsuario::class], version = 1, exportSchema = false)
+@Database(entities = [Receta::class, Usuario::class, FavoritasUsuario::class], version = 2, exportSchema = false)
 abstract class AppDatabase : RoomDatabase(){
     abstract fun recetaDao(): RecetaDao
 

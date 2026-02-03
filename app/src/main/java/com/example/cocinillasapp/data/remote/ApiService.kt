@@ -14,7 +14,7 @@ interface ApiService {
 
     // Obtener receta por ID
     @GET("lookup.php")
-    suspend fun getMealById(@Query("i") id: Int): Response<RecetaResponse>
+    suspend fun getMealById(@Query("i") id: String): Response<RecetaResponse>
 
     // Obtener el listado de categorias para el Toolbar
     @GET("categories.php")
