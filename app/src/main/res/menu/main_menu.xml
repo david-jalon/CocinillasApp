@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item android:id="@+id/cat_beef" android:title="Beef" app:showAsAction="never"/>
+    <item android:id="@+id/cat_pasta" android:title="Pasta" app:showAsAction="never"/>
+    <item android:id="@+id/cat_pork" android:title="Pork" app:showAsAction="never"/>
+    <item android:id="@+id/cat_chicken" android:title="Chicken" app:showAsAction="never"/>
+    <item android:id="@+id/cat_seafood" android:title="Seafood" app:showAsAction="never"/>
+    <item android:id="@+id/cat_favorites" android:title="Favorites" app:showAsAction="never"/>
+
+</menu>
