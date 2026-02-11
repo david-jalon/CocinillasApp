@@ -34,7 +34,6 @@ class DetalleActivity : AppCompatActivity() {
         val usuarioEmail = intent.getStringExtra("usuario_email")
 
         if (recetaId == null || usuarioEmail == null) {
-            // Manejar el error, por ejemplo, cerrar la actividad
             finish()
             return
         }
